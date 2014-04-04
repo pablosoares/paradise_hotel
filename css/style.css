@@ -1,0 +1,629 @@
+/*Style Sheet */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+    height: 100%;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #ebebeb;
+	font-family: 'Open Sans';
+	overflow-x: hidden; 
+	height: 100%;
+}
+
+#global {
+    min-height:100%;
+    position:relative;
+}
+
+header, footer, nav, section, article, aside {
+	display: block;
+}
+
+img {
+	outline: none;
+	border: none;
+}
+
+p {
+	color: #373535;
+}
+
+header {
+	width: 100%;
+	height: 86px;
+	background: #191919;
+	background-attachment: fixed;
+}
+
+nav#menu-header {
+	width: 980px;
+	margin: auto;
+	position: relative;
+	height: 100%;
+}
+
+nav#menu-header ul li {
+	display: inline-block;
+}
+
+nav#menu-header ul li a {
+	color: #fff; 
+	text-decoration: none;
+}
+
+#logoList {
+	width: 165px;
+}
+
+#logoList li {
+	margin-top: 15px;
+}
+
+#listMenu {
+	position: absolute;
+	top: 30px;
+	left: 235px;
+}
+
+#listMenu li {
+	margin-left: 20px;
+}
+
+#listMenu li a {
+	border-left: 1px solid #444242;
+	padding-left: 15px;
+}
+
+#listMenu li a.no-border {
+	border: none;
+}
+
+#listMenu li a:hover {
+	color: #32a2e3;
+}
+
+/*
+.select {
+	background: #191919 url(../images/seta.jpg) no-repeat 32px 4px;
+	width: 44px;
+	height: 15px;
+}
+*/
+
+header select {
+    position: absolute;
+    right: 193px;
+    top: 32px;
+	border: none;
+	color: #fff;
+	background: #191919;
+}
+
+div.carrousel {
+	width: 100%;
+	background: #cccccc;
+	z-index: 0;
+	background-attachment: fixed;
+}
+
+div.carrousel img {
+    z-index: 0;
+}
+
+.overview {
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#about {
+	width: 438px;
+	height: 48px;
+	background: url(../images/bg-content.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 1px;
+	z-index: 2;
+}
+
+#about p {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: right;
+	padding-top: 15px;
+	margin-right: 45px;
+}
+
+#center {
+	width: 980px;
+	margin: auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#section {
+	overflow: hidden;
+	width: 670px;
+	float: left;
+}
+
+#list-top-menu {
+	margin: auto;
+	width: 100%;
+	height: 61px;
+	background: url(../images/bg-topmenu.png) no-repeat;
+	margin-top: 10px;
+}
+
+#list-top-menu  ul {
+	width: 604px;
+	margin: auto;
+	margin-left: 215px;
+}
+
+#list-top-menu ul li {
+	margin-right: 10px;
+	margin-top: 15px;
+	display: inline-block;
+	list-style: none;
+}
+
+#list-top-menu li a {
+	text-decoration: none;
+	color: #191919;
+	font-size: 15px;
+}
+
+#our-hotel {
+	float: left;
+	width: 670px;
+	height: 270px;
+	margin-top: 40px;
+	border-bottom: 1px dashed #c8c8c8;
+	margin-bottom: 20px;
+}
+
+#our-hotel p {
+	font-size: 13px;
+}
+
+#Hoteldptn {
+	float: left;
+	height: 315px;
+	width: 670px;
+	margin-bottom: 80px;
+}
+
+#Hoteldptn div.description p {
+	font-size: 13px;
+}
+
+#Hoteldptn div.box1.description {
+	width: 100%;
+	height: 115px;
+}
+
+div.box1.description img {
+	float: left;
+}
+
+div.box1.description p {
+	float: right;
+	width: 500px;
+	height: 98px;
+}
+
+#Hoteldptn div.box2.description {
+	width: 100%;
+	height: 115px;
+}
+
+div.box2.description img {
+	float: left;
+}
+
+div.box2.description p {
+	float: right;
+	width: 500px;
+	height: 98px;
+}
+
+aside#boxright {
+	width: 210px;
+	height: 590px;
+	float: right;
+	margin-top: 35px;
+	border-left: 1px solid #ccc;
+	padding-left: 20px;
+}
+
+#boxright h1 {
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+}
+
+input.search, #boxright select {
+	width: 206px;
+	height: 36px;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	border: 1px solid #cccccc;
+}
+
+#form {
+	position: relative;
+}
+
+#form label {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 34px;
+	display: block;
+}
+
+.icon {
+	position: absolute;
+	right: 5px;
+    top: 7px;
+}
+
+.icon .btnicon {
+	background: url(../images/icon.png)no-repeat;
+	width: 20px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+	margin-top: 4px;
+}
+
+#form p {
+	font-size: 13px;
+}
+
+#form input.from {
+	width: 95px;
+	height: 35px;
+	float: left;
+	margin-top: 10px;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+#form input.to {
+	width: 95px;
+	height: 35px;
+	margin-top: 10px;
+	margin-right: 3px;
+	float: right;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+#confirm {
+	background: url(../images/btn-booknow.png) no-repeat;
+	width: 207px;
+	height: 35px;
+	border: none;
+	box-shadow: 0px 2px 10px -3px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.boxContact {
+	width: 100%;
+	height: 160px;
+	margin-top: 30px;
+	position: relative;
+}
+
+.boxContact .listcontact {
+    float: left;
+    width: 210px;
+}
+
+.boxContact .listcontact li {
+	list-style: none;
+	margin-top: 10px;
+	border-top: 1px solid #CDCDCD;
+	padding-top: 5px;
+}
+
+.no-border {
+	border: none !important;
+}
+
+.boxContact .listcontact li span {
+	color: #6d6b6b;
+	font-size: 13px;
+}
+
+.boxContact .listcontact li a {
+	text-decoration: none;
+	color: #6d6b6b;
+	font-size: 13px;
+}
+
+.boxContact .listicon {
+	position: absolute;
+    right: 0px;
+    top: 60px;
+}
+
+.boxContact .listicon li {
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.boxContact .listicon .phone {
+	background: url(../images/icons.png)no-repeat -3px 4px;
+	width: 25px;
+	height: 20px;
+	margin-left: 2px;
+}
+
+.boxContact .listicon .chat {
+	background: url(../images/icons.png)no-repeat 0px -40px;
+	width: 25px;
+	height: 20px;
+}
+
+.boxContact .listicon .email {
+	background: url(../images/icons.png)no-repeat 0px -77px;
+	width: 25px;
+	height: 20px;
+}
+
+/*-----MODAL------*/
+
+.window {
+	display: none;
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 9900;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #ebebeb;
+	
+}
+
+#formChat {
+    height: 250px;
+    margin: auto;
+    width: 430px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.boxChatTitle {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+}
+
+.boxChatTitle h1 {
+	background: url(../images/chat.png) no-repeat;
+	width: 64px;
+	height: 64px;
+	margin: auto;
+	display: block;
+}
+
+.boxChatTitle h3 {
+	text-align: center;
+}
+
+#formChat input {
+	border-radius: 4px;
+	outline: none;
+}
+
+#formChat  input#name, input#surname {
+    width: 100px;
+    margin-left: 18px;
+}
+
+#formChat input#email {
+	width: 200px;
+	margin-left: 10px;
+}
+
+#formChat input#tel {
+    margin-left: 7px;
+    width: 199px;
+}
+
+#formChat span {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+#formChat label {
+	text-transform: uppercase;
+	padding-left: 10px;
+} 
+
+#formChat .paragraph-one {
+	padding-top: 15px;
+}
+
+#formChat button#btnchat {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(50, 162, 227, 0.7)) #4FD8E8;
+    border: none;
+    border-radius: 5px;
+    height: 65px;
+    width: 250px;
+    cursor: pointer;
+    color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 86px;
+}
+
+#mascara {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+	background: #000;
+}
+
+.fechar {
+	display: block;
+	float: right;
+	background: url(../images/close.png)no-repeat;
+	width: 27px;
+	height: 27px;
+	outline: none;
+}
+
+.fechar span {
+	display: none;
+}
+
+footer {
+	width: 100%;
+	height: 66px;
+	background-color: #fff;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+}
+
+footer p {
+	color: #373535;
+	font-size: 12px;
+	float: left;
+	margin-top: 27px;
+}
+
+#list-icons {
+	width: 140px;
+	margin-left: 200px;
+	float: left;
+	margin-top: 20px;
+}
+
+#list-icons ul {
+	width: 142px;
+}
+
+#list-icons ul li {
+	display: inline-block;
+}
+
+#list-icons ul li a h1.twitter {
+	background: url(../images/redes.png);
+	width: 25px;
+	height: 31px;
+}
+
+#list-icons ul li a h1.facebook {
+	background: url(../images/redes.png) 123px 0;
+	width: 25px;
+	height: 31px;
+}
+
+#list-icons ul li a h1.youtube {
+	background: url(../images/redes.png) 91px 0;
+	width: 25px;
+	height: 31px;
+}
+
+#list-icons ul li a h1.other {
+	background: url(../images/redes.png) 59px 0;
+	width: 25px;
+	height: 31px;
+}
+
+#list-icons ul li a h1.pinterest {
+	background: url(../images/redes.png) 26px 0;
+	width: 25px;
+	height: 31px;
+}
+
+#listFooter {
+	width: 284px;
+	float: right;
+	margin-top: 20px;
+}
+
+#listFooter ul li {
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+#listFooter ul li a {
+	color: #373535;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+ /* hack IE9 */
+@media all and (min-width:0) {
+
+ #formChat button#btnchat {   
+    background: #4FD8E8;
+ }
+}
+
+/* hack IE8 */
+#formChat button#btnchat {   
+    background: #4FD8E8\9;
+ }
+
+.fechar span {
+	display: block\9;
+	text-decoration: none\9;
+	color: #000\9;
+}
+
+.icon .btnicon {
+	background: url(../images/icon.png)\9;
+	width: 15px\9;
+	height: 17px\9;
+}
+
+.boxContact .listicon .phone {
+	background: url(../images/icons.png) -2px 0px\9;
+	width: 22px\9;
+	height: 20px\9;
+}
+
+.boxContact .listicon .chat {
+	background: url(../images/icons.png) -24px -41px\9;
+	width: 24px\9;
+	height: 21px\9;
+}
+
+.boxContact .listicon {
+    top: 58px\9;
+}
+
+.boxContact .listicon .email {
+	background: url(../images/icons.png) 0px -76px\9;
+	width: 25px\9;
+	height: 6px\9;
+}
+
+.boxContact .listicon li {
+	padding-bottom: 14px\9;
+}
+

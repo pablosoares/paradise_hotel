@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Paradise Hotel</title>
+	<meta charset="UTF-8" />
+
+<link rel="icon" href="images/hotelIcon.png" sizes="26x26"/>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+
+<!-- lightbox -->
+<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+<!-- // -->
+
+<!-- FlexSlider -->
+<script type="text/javascript" src="FlexSLider/jquery.flexslider.js"></script>
+<link rel="stylesheet" type="text/css" href="FlexSlider/flexslider.css" media="screen">
+<!-- // -->
+
+<script type="text/javascript" src="js/html5shiv-printshiv.js"></script>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<link rel="stylesheet" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+
+<script type="text/javascript">
+
+	$(window).load(function (){
+		$('.flexslider').flexslider();
+	});
+	
+</script>
+
+</head>
+<body>
+<div id="global">
+<header>
+	<nav id="menu-header">
+		<ul id="logoList">
+			<li><a href="#"><img src="images/logo.png" alt="logo" /></a></li>
+		</ul>
+			<ul id="listMenu">
+				<li><a href="#" class="no-border">Hotel</a></li>
+				<li><a href="#">Rooms & Suites</a></li>
+				<li><a href="#">Reservation</a></li>
+				<li><a href="#">Activities</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+	</nav>
+	<div class="select">
+		<select>
+			<option value="1">EN</option>
+			<option value="2">PT</option>
+		</select>
+	</div>
+</header> 
+
+<div class="carrousel flexslider">
+	<ul class="slides">
+		<li>
+			<img src="http://lorempixel.com/1360/215/abstract/" alt="Paradise Hotel" />
+		</li>
+		<li>
+			<img src="http://lorempixel.com/1360/215/nightlife/" alt="Paradise Hotel" />
+		</li>
+		<li>
+			<img src="http://lorempixel.com/1360/215/food/" alt="Paradise Hotel" />
+		</li>
+		<li>
+			<img src="http://lorempixel.com/1360/215/nature/" alt="Paradise Hotel" />
+		</li>
+	</ul>
+    <div id="about">
+	    <p>About Paradise Hotel</p>
+    </div>
+</div>
+
+<div id="center">
+		<nav id="list-top-menu">
+			<ul>
+				<li><a href="#" class="overview">Overview</a></li>
+				<li><a href="#">Hotel Location</a></li>
+				<li><a href="#">Image Gallery</a></li>
+				<li><a href="#">Hotel Services</a></li>
+				<li><a href="#">Local Information</a></li>
+			</ul>
+		</nav>
+
+	<section id="section">
+		<article id="our-hotel">
+				<h1>Our Paradise hotel</h1>
+				<br />
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo. Phasellus adipiscing pretium sem, id congue erat fermentum at. Fusce dapibus felis non ante gravida convallis. Nullam vulputate convallis lectus in ultrices.
+			</p>
+			<br />
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo. Phasellus adipiscing pretium sem, id congue erat fermentum at. Fusce dapibus felis non ante gravida convallis. Nullam vulputate convallis lectus in ultrices.
+			</p>
+		
+		</article>
+
+		<article id="Hoteldptn">
+			<h1>Class aptent taciti sociosqu</h1>
+			<br />
+
+			<div class="box1 description">
+				<a href="http://lorempixel.com/450/450/business/" data-lightbox="roadtrip">
+					<img src="http://lorempixel.com/150/100/business/" alt="" />
+				</a>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo. Phasellus adipiscing pretium sem, id congue erat fermentum at. Fusce dapibus felis non ante gravida convallis. Nullam vulputate convallis lectus in ultrices.
+				</p>
+			</div>
+			<br />
+			<div class="box2 description">
+				<a href="http://lorempixel.com/450/450/people/" data-lightbox="roadtrip">
+					<img src="http://lorempixel.com/150/100/people/" alt="" />
+				</a>
+				<p>
+					Ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo. Phasellus adipiscing pretium sem, id congue erat fermentum at. 
+					Fusce dapibus felis non ante gravida convallis. Nullam vulputate convallis lectus in ultrices.
+				</p>
+			</div>
+		</article>
+	</section>
+
+	<aside id="boxright">
+		<h1>Search</h1>
+
+		<form id="form" method="post">
+			<input type="text" class="search" name="search" placeholder="Search..." />
+			<span class="icon">
+				<button class="btnicon"></button>
+			</span>
+			<br />
+
+			<label>Reservations</label>
+
+			<p>
+				Request a reservation. We will
+				come back to you shortly. 
+			</p>
+			<br /> 
+
+			<select required>
+				<option value="" disabled selected>Search...</option>
+				<option value="2">Room 1</option>
+				<option value="3">Room 2</option>
+				<option value="4">Room 3</option>
+			</select>
+
+			<input type="text" class="from" placeholder="From" required />
+			<input type="text" class="to" placeholder="To" required />
+			<button id="confirm"></button>
+		</form>
+
+		<div class="boxContact">
+		
+			<h1>Contact us</h1>
+
+			<ul class="listcontact">
+				<li class="no-border"><span>02/555 333 22</span></li>
+				<li><a href="#chatmodal" rel="modal">Live Chat</a></li>
+				<li><a href="#">info@pixel-fabric.com</a></li>
+			</ul>
+
+			<ul class="listicon">
+				<li class="phone"></li>
+				<li class="chat"></li>
+				<li class="email"></li>
+			</ul>
+
+		</div>
+
+		<div class="window" id="chatmodal">
+		    <a href="#" class="fechar"><span>X</span></a>
+
+		     <div class="boxChatTitle">
+		    	<h1></h1>
+		    	<h3>Live Chat</h3>
+		     </div>	
+
+		    <form id="formChat" action="" method="">
+		      <p class="paragraph-one">
+		    	<label for="name">Name:</label>
+		    	<input type="text" id="name" name="name" required />
+
+		    	<label for="surname">Surname:</label>
+		    	<input type="text" id="surname" name="surname" required />
+		      </p>
+		    	<br/>
+		      <p>
+		    	<label for="email">E-mail:</label>
+		    	<input type="text" id="email" name="email" required />
+		      </p>
+		    	<br/>
+		      <p>
+		    	<label for="tel">Phone:</label>
+		    	<input type="tel" id="tel" name="tel" required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" />
+		    	<br />
+		    	<span>(Format: +99(99)9999-9999)</span>
+		      </p>
+		    	<br/>
+		    	<button id="btnchat">Start chat</button>
+
+		    </form>
+		    
+		</div>
+
+		<!-- mascara -->  
+		<div id="mascara"></div>
+
+	</aside>
+
+</div>
+
+<footer>
+	<div id="center">
+		<p>2014 Paradise Hotel. All Rights Reserved.</p>
+
+		<nav id="list-icons">
+			<ul>
+				<li><a href="#" title="Twitter"><h1 class="twitter"></h1></a></li>
+				<li><a href="#" title="Facebook"><h1 class="facebook"></h1></a></li>
+				<li><a href="#" title="Youtube"><h1 class="youtube"></h1></a></li>
+				<li><a href="#" title="?"><h1 class="other"></h1></a></li>
+				<li><a href="#" title="Pinterest"><h1 class="pinterest"></h1></a></li>
+			</ul>
+		</nav>
+
+		<nav id="listFooter">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Rooms & Suites</a></li>
+				<li><a href="#">Reservation</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>	
+	</div>
+</footer>
+</div>
+
+<script type="text/javascript" src="js/ui.js"></script>
+
+</body>
+</html>
